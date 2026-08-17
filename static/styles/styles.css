@@ -1,0 +1,15 @@
+/* styles.css — minimal styling for layout and dark friendly theme */
+
+body { background: var(--pf-global--BackgroundColor--100, #f0f0f0); color: #222; font-family: 'RedHatText', 'Segoe UI', system-ui, -apple-system, sans-serif; }
+#pz-app { padding: 1rem; max-width: 1200px; margin: 0 auto; }
+nav.pf-c-page__main-nav ul { list-style: none; padding: 0; display:flex; gap: 1rem; }
+nav.pf-c-page__main-nav a { text-decoration: none; }
+
+/* Dark mode support via .pf-m-dark on body */
+body.pf-m-dark { background: #1b1b1b; color: #f5f5f5; }
+
+/* Responsive minor tweaks */
+@media (max-width: 768px) {
+  #pz-app { padding: 0.5rem; }
+  nav.pf-c-page__main-nav ul { flex-wrap: wrap; }
+}

@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Cockpit — Project Zomboid</title>
+  <!-- PatternFly 4 CDN for styling -->
+  <link rel="stylesheet" href="https://unpkg.com/@patternfly/patternfly@4.254.5/patternfly.min.css">
+  <link rel="stylesheet" href="/cockpit-project-zomboid/styles/styles.css">
+</head>
+<body class="pf-m-redhat-font">
+  <div id="app" class="pf-c-page__main">
+    <!-- Cockpit will embed this plugin; we keep a minimal page for standalone testing -->
+    <header class="pf-c-page__header">
+      <h1>Project Zomboid Server Manager</h1>
+    </header>
+    <main>
+      <div id="pz-app"></div>
+    </main>
+  </div>
+
+  <script src="/cockpit-project-zomboid/src/cockpit.js"></script>
+</body>
+</html>

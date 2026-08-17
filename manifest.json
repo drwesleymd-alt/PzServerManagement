@@ -1,0 +1,11 @@
+{
+  "name": "cockpit-project-zomboid",
+  "title": "Cockpit Project Zomboid",
+  "description": "A modern Cockpit plugin for managing Project Zomboid dedicated servers (Build 41 & Build 42).",
+  "version": "0.1.0",
+  "author": "drwesleymd-alt",
+  "license": "MIT",
+  "cockpit": {
+    "requires": ["cockpit >= 250"]
+  }
+}

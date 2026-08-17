@@ -1,0 +1,13 @@
+{
+  "name": "cockpit-project-zomboid",
+  "version": "0.1.0",
+  "description": "Cockpit plugin for managing Project Zomboid dedicated servers",
+  "main": "src/cockpit.js",
+  "scripts": {
+    "build": "mkdir -p dist && cp -r src static manifest.json README.md LICENSE dist/",
+    "watch": "echo \"Use your editor to develop. This repo is small; no bundler configured by default.\"",
+    "lint": "echo \"No linter configured by default. Add ESLint/Prettier if desired.\""
+  },
+  "author": "drwesleymd-alt",
+  "license": "MIT"
+}

@@ -1,0 +1,22 @@
+# Example systemd unit for Project Zomboid dedicated server
+
+# Place the following as /etc/systemd/system/pzserver@.service to allow multiple instances e.g. pzserver@instance1
+
+[Unit]
+Description=Project Zomboid server instance %i
+After=network.target
+
+[Service]
+Type=simple
+User=games
+Group=games
+WorkingDirectory=/srv/pz/%i
+# ExecStart should point to your start script or the server binary
+ExecStart=/srv/pz/%i/start-server.sh
+Restart=on-failure
+KillMode=control-group
+Environment=STEAMCMD_DIR=/opt/steamcmd
+# RCON password should be stored in a secure file or systemd's credentials store; do not embed in unit.
+
+[Install]
+WantedBy=multi-user.target
